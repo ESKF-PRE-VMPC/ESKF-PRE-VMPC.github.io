@@ -99,6 +99,11 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
+/* Slightly wider page width for content containers */
+.container.is-max-desktop {
+  max-width: 1140px;
+}
+
 .hero-body {
   padding: 4rem 1.5rem;
 }
@@ -804,8 +809,17 @@ a:focus {
 /* Styling for the image container */
 .image-container {
   display: flex;            /* Use Flexbox to arrange images side by side */
-  justify-content: space-between; /* Space between the images */
+  justify-content: center;  /* Center the images in the container */
+  align-items: center;      /* Align images vertically */
+  flex-wrap: wrap;          /* Wrap on smaller screens */
+  gap: 1.5rem;              /* Add space between the two images */
   margin-top: 20px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .image-method {
@@ -821,15 +835,22 @@ a:focus {
   height: auto;            /* 保持图片比例 */
 }
 
+.centered-gif {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
 
 .image-sim1 {
-  width: 50%;              /* Ensure each image takes up nearly half of the container */
+  width: 45%;              /* Ensure each image takes up nearly half of the container */
   height: auto;
   text-align: center;      /* Center the images */
 }
 
 .image-sim2 {
-  width: 50%;              /* Ensure each image takes up nearly half of the container */
+  width: 45%;              /* Ensure each image takes up nearly half of the container */
   height: auto;
   text-align: center;      /* Center the images */
 }
@@ -838,13 +859,101 @@ li {
   font-size: 1.25rem;  /* 设置字体大小 */
 }
 
-.image-exp1 {
+.image-simresult1 {
+  display: block;
+  margin: 0 auto;
+  /* width: 100%; */
+  max-width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.image-simresult2 {
   width: 45%;              /* Ensure each image takes up nearly half of the container */
   height: auto;
   text-align: center;      /* Center the images */
 }
 
+.image-simresult3 {
+  width: 45%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+.image-exp1 {
+  width: 35%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
 .image-exp2 {
+  width: 30%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+.video-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.video-card {
+  width: 48%;
+  max-width: 560px;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  background: #000;
+}
+
+.video-card p {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
+.video-tree {
+  display: block;
+  width: 50%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0.75rem;
+  background: #000;
+}
+
+.image-exp3 {
+  width: 50%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+.image-exp4 {
+  width: 50%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+.image-exp5 {
+  width: 65%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+.image-expresult1 {
+  width: 45%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+.image-expresult2 {
   width: 45%;              /* Ensure each image takes up nearly half of the container */
   height: auto;
   text-align: center;      /* Center the images */
